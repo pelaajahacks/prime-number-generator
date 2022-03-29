@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Prime Number Generator</title>
 </head>
 
@@ -23,10 +23,20 @@
                 <div class="main-login-subtitle">
                     <h1 class="text">Press The Button</h1>
                 </div>
+                <div class="slider">
 
+                    <input type="range" name="" id="num_slider" min="2" max="99999" value="10">
+                    <p class="slider_max text-uncentered">100000</p>
+                    <p class="slider_min text-uncentered">0</p>
+                    <div class="editable">
+                        <p id="slider_val" class="text-uncentered" contenteditable="true">Your value should be here ._.</p>
+                    </div>
+
+                </div>
+                <script src="main.js"></script>
                 <div class="login-area">
                     <div class="inputs">
-                        <input type="submit" name="" value="Prime Numbers" id="submit" onclick="display(1000)">
+                        <input type="submit" name="" value="Prime Numbers" id="submit" onclick="display()">
 
                     </div>
 
@@ -38,7 +48,7 @@
 
                 </div>
 
-                <p class="text">Made by ♥<a href="https://github.com/pelaajahacks/prime-number-generator">pelaajahacks</a></p>
+                <p class="text">Made by ♥ <a href="https://github.com/pelaajahacks/prime-number-generator">pelaajahacks</a></p>
             </div>
 
         </div>
