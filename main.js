@@ -43,4 +43,9 @@ function display() {
     }
     console.log(arr)
     span.innerHTML = arr.join('\r\n')
+    span.select(); 
+    span.setSelectionRange(0, 999999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(span.value);
 }
