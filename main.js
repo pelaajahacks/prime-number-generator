@@ -45,5 +45,5 @@ function display() {
     span.innerHTML = arr.join('\r\n') /* For mobile devices */
 
     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(span.innerHTML);
+    navigator.clipboard.writeText(arr.join('\r\n'));
 }
