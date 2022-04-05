@@ -35,16 +35,14 @@ function isPrime(num) {
 function display() {
     var n = output.innerHTML;
     var arr = [2];
-    span = document.getElementById("generated_numbers");
+    var span = document.getElementById("generated_numbers");
     for (var i = 3; i < n; i += 2) {
         if (isPrime(i)) {
             arr.push(i);
         }
     }
     console.log(arr)
-    span.innerHTML = arr.join('\r\n')
-    span.select(); 
-    span.setSelectionRange(0, 999999); /* For mobile devices */
+    span.innerHTML = arr.join('\r\n') /* For mobile devices */
 
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(span.value);
